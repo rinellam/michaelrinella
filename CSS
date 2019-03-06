@@ -1,0 +1,534 @@
+/*
+Theme Name: Twenty Seventeen Child
+Theme URL: http://michaelrinella.com
+Description: Twenty Seventeen Child Theme
+Author: Michael Rinella
+Author URL: http://michaelrinella.com
+Template: twentyseventeen
+Version: 1.0.0
+Text Domain: twentyseventeen-child
+*/
+
+/*
+_____________            ___________       
+___  __ \__(_)______________  /__  /_____ _
+__  /_/ /_  /__  __ \  _ \_  /__  /_  __ `/
+_  _, _/_  / _  / / /  __/  / _  / / /_/ / 
+/_/ |_| /_/  /_/ /_/\___//_/  /_/  \__,_/  
+                                                                       ,                                                     
+*/
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella >> START THEME EDITS
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > change font family to Roboto
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+h1, h2, h4, h5, h6 {
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+h3 {
+	font-weight: 600; 
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+b, strong {
+	font-weight: 700; 
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+p {
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+.entry-content a, .entry-summary a, .comment-content a, .widget a, .site-footer .widget-area a, .posts-navigation a, .widget_authors a strong {
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > fontawesome icon for denoting external link
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+a[target="_blank"]:after {
+	font-family: 'FontAwesome';
+	content: " \f08e";
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > chevron icon back to top
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.chevronUp .fa, .fas { /* chevron font, size and weight */
+	font-weight: 400;
+	font-size: 3rem;
+}
+.chevronUp { /* align chevron right */
+	text-align: right;
+}
+.chevronUp a { /* turn off chevron hover */
+	box-shadow: none !important;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+rinella > links styling
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+a:link {
+	color:  DodgerBlue; /* unvisited link */
+}
+a:visited {
+	color:  DodgerBlue; /* visited link */
+}
+.navigation-top .current_page_item > a {
+	color: #000000; /* active link on main menu */
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+rinella > remove hr, reduce padding, decrease text size, and remove white line from menu text in FOOTER 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.site-footer .widget ul li, .widget ol li {
+	border-bottom: 0;
+	border-top: 0;
+	padding: 0.5em 0;
+	font-size: 0.85rem;
+}
+.widget ul li a, .site-footer .widget-area ul li a, .site-footer .widget-area ul li a {
+	box-shadow: none;
+}
+.site-info {
+	display: none /* remove FOOTER text */
+}
+.site-footer {
+	background-color: #CFCFCF; /* background color for FOOTER */
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+rinella > modify width of page HEADER-text to full width
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+body.page-two-column:not(.archive) #primary .entry-header, body.page-two-column.archive:not(.has-sidebar) #primary .page-header {
+	width: 100%;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > modify PAGES to full width
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#primary .entry-content {
+	width: 100% !important;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > modify POSTS to full width
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#primary article {
+	width: 100% !important;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > down arrow on nav
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.site-header .navigation-top .menu-scroll-down {
+	color: DodgerBlue;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > font styling for entry text HEADERS - H1 & H2 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+h1.entry-title {
+	font-family: 'Roboto', 'Arial', serif !important;
+	font-size: 3em !important;
+	text-transform: none !important;
+	letter-spacing: -0.5px!important;
+	line-height: 1em;
+}
+h2.page-title {
+	font-family: 'Roboto', 'Arial', sans-serif !important;
+	font-size: 3em !important;
+	text-transform: none !important;
+	letter-spacing: 0px!important;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > main text styling for Site Title - michaelrinella.com
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
+	color: #fff;
+	font-family: 'Alfa Slab One', cursive;
+	letter-spacing: 0.1rem;
+	font-size: 3rem;
+	text-transform: none;
+	font-weight: 400;
+	text-shadow: 0 0 0.35rem #333333;
+	/*text-shadow: 0 0 1px #000000, 0 0 4px #220078, 0 0 7px #871ec1, 0 0 10px #0a87d6, 0 0 14px #51ccfd;*/
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > tightens up the spacing between the entry HEADER and the menu 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.site-content {
+	padding: 2.5em 0 0;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+rinella > No display at 800px, dislay at 767px, align left, uppercase
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media screen and (max-width: 800px) {
+.js .menu-toggle {
+	display: none;
+	}
+}
+@media screen and (max-width: 767px) {
+.js .menu-toggle {
+	display: block;
+	margin-left: 14px;
+	text-transform: uppercase;
+	}
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > main text styling for Site Title - michaelrinella.com queries at 600px, 500px, 450px
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media screen and (max-width: 600px) {
+body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
+	font-size: 2.7rem;
+	}
+}
+@media screen and (max-width: 500px) {
+body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
+	font-size: 2.4rem;
+	}
+}
+@media screen and (max-width: 450px) {
+body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
+	font-size: 2.2rem;
+	}
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > resize header image for MOBILE
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media screen and (max-width: 414px) {
+.has-header-image.home.blog .custom-header {
+	height: 25vh;
+	object-fit: cover;
+	}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > resize header image for mobile 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.has-header-image .custom-header-media img {
+	top: -200px;
+	}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > resize main text styling for Site Title for MOBILE
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
+	font-size: 1.4rem;
+	}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > align mobile menu left 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.js .menu-toggle {
+	display: block;
+	margin-left: 14px;
+	}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > remove margin between header  h2 posts 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+h2 {
+	margin: 0 0 0.50em;
+	}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > remove padding under page header and margin above header text 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.page-header {
+	margin-top: -1em;
+	padding-bottom: 0;
+	}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > enlarge footer text for mobile
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.site-footer .widget ul li, .widget ol li {
+	font-size: 0.85rem;
+	}
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > resize main text styling for Site Title for MOBILE Galaxy S9
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media screen and (max-width: 360px) {
+body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
+	font-size: 1.2rem; 
+	}
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella >> END THEME EDITS
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella >> START BOOTSTRAP
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > turn off hover on carousel controls 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+a.carousel-control-prev {
+	box-shadow: none !important;
+}
+a.carousel-control-next {
+	box-shadow: none !important;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella >> START Work Sample gallery 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.hovereffect { /* hover effect for images */
+	width:100%;
+	/*height:100%;*/
+	float:left;
+	overflow:hidden;
+	position:relative;
+	text-align:center;
+	cursor:default;
+}
+.hovereffect img { /* hover effect for images */
+	display:block;
+	position:relative;
+	-webkit-transition:all .4s linear;
+	transition:all .4s linear;
+}
+.hovereffect:hover img { /* hover effect for images */
+	-ms-transform:scale(1.2);
+	-webkit-transform:scale(1.2);
+	transform:scale(1.2);
+	}
+.rinellaWorkGallery .card-body {
+	padding-top: 1.25rem;
+	padding-left: 0rem;
+	padding-right: 0rem;
+	padding-bottom: 0rem;
+	font-size: 1rem;
+}
+.col-md-4 .hovereffect {
+	border: 2px solid #049fd4;
+	margin-bottom: 0.5rem;
+}
+.col-md-4 .hovereffect:hover {
+	border: 2px solid #000000;
+	margin-bottom: 0.5rem;
+}
+.rinellaWorkGallery .row {
+	padding-bottom: 3rem;
+}
+@media screen and (max-width: 800px) {
+.rinellaWorkGallery .card-body li {
+	font-size: 0.9rem;
+	}
+.figure-caption a {
+	font-size: 0.75rem;
+	}
+h3.card-title {
+	font-size: 1.0rem;
+	}
+}
+@media screen and (max-width: 768px) {
+.rinellaWorkGallery .card-body li {
+	font-size: 0.9rem;
+	}
+.figure-caption a {
+	font-size: 0.75rem;
+	}
+h3.card-title {
+	font-size: 1.0rem;
+	}
+}
+@media screen and (max-width: 600px) {
+	h3.card-title {
+		font-size: 1.375rem;
+	}
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella // END Work Sample gallery 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella >> START Knowledge + Skill Sets 
+- - - - - - - - - - - - - - */
+.col-md-4 li {
+	list-style-position: outside;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+.rinellaApplications .card-body {
+	background-color: #DAE0E3;
+}
+.rinellaQuickHits .card {
+	margin-bottom: 35px;
+}
+.rinellaApplications .card-body li {
+	list-style-position: inside;
+}
+.card-text ul {
+	list-style-position: inside;
+}
+.rinellaWhatIbring ul {
+	padding-left: 1rem;
+}
+.rinellaWhatIbring {
+	margin-bottom: 35px;
+}
+@media screen and (max-width: 800px) {
+.rinellaApplications .card-body {
+	height: 200px; /* set card body height for Tablet and iPad */
+	}
+.rinellaApplications .card-body li {
+	font-size: 0.85rem; /* reduce font size for Tablet and iPad */
+	list-style-position: outside;
+	margin-left: 0.8rem; /* indent li for Tablet and iPad */
+	}
+}
+@media screen and (max-width: 414px) {
+.rinellaApplications .card-body{ 
+	height: 100%; /* set card-body height back to 100% for MOBILE */
+	}
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella // END Knowledge + Skill Sets 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella >> END BOOTSTRAP
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella // START Education + Work History 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.rinellaWorkhistory {
+	letter-spacing: 0.15em;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella // START thumbnail image on Posts 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.post-thumbnail a img {
+	width: 25%;
+	float: left;
+	margin-right: 20px;
+}
+/* Mobile */
+@media screen and (max-width: 414px) {
+.post-thumbnail a img {
+	width: 100%;	
+	margin-bottom: 20px;
+	}
+.imagecenter {
+	padding-top: 15px;
+	}
+/* rinella > change font and text to uppercase for mobile */
+button.menu-toggle {
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	text-transform: uppercase;
+	}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > reduce entrhy h1 to wrap correctly for mobile Curriculm Vitae
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#post-3670 h1.entry-title {
+	font-size: 2.7em!important;
+	}
+}
+@media screen and (max-width: 375px) {
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > reduce entrhy h1 to wrap correctly for mobile
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#post-2631 h1.entry-title {
+	font-size: 2.7em!important;
+	}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > reduce entrhy h1 to wrap correctly for mobile Curriculm Vitae
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#post-3670 h1.entry-title {
+	font-size: 2.5em!important;
+	}
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > align resume text left with list items
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.rinellaResume ul {
+	margin-left: 0.55rem;
+}
+.rinellaResume .card-title, .card-subtitle {
+	margin-left: -0.35rem;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > add space betweein card and close bracket
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.rinellaResume, .rinellaAboutMe .card {
+	margin-bottom: 1.4rem;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella > round images on Posts 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.post-thumbnail a img {
+	border-radius: 50%;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella >> START Parallax for About Me
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+	position: relative;
+	opacity: 1;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	/*-moz-transform: scale(1.05);
+	 * -webkit-transform: scale(1.05); 
+	 * transform: scale(1.05);*/
+}
+.bgimg-1 {
+	background-image: url("/wp-content/uploads/2019/03/baseballImg02.800w.png");
+	min-height: 400px;
+}
+.bgimg-2 {
+	background-image: url("/wp-content/uploads/2019/03/guitarImg04.800w.jpeg");
+	min-height: 400px;
+}
+.bgimg-3 {
+  	background-image: url("/wp-content/uploads/2019/03/carImg01.800w.png");
+  	min-height: 400px;
+}
+.bgimg-4 {
+	background-image: url("/wp-content/uploads/2019/03/CSMCBldgMoses.800w.jpg");
+	min-height: 400px;
+}
+.bgimg-5 {
+	background-image: url("/wp-content/uploads/2019/03/bikeimg01.800w.png");
+	min-height: 400px;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media screen and (max-width: 800px) { 
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+	background-attachment: scroll;
+	min-height: 550px;
+	}
+.paraBox {
+	margin-top: -20px;
+	margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 768px) {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+	background-attachment: scroll;
+	min-height: 500px;
+	margin-top: 10px;
+	}
+.paraBox {
+	margin-top: -10px;
+	margin-bottom: 30px;
+	}
+}
+@media screen and (max-width: 414px) {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+	background-attachment: scroll;
+	min-height: 350px;
+	margin-top: -20px;
+	}
+.paraBox {
+	margin-top: -70px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 375px) {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+	background-attachment: scroll;
+	min-height: 350px;
+	margin-top: -40px;
+	}
+.paraBox {
+	margin-top: -90px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+rinella >> END Parallax for About Me
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
