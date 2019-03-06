@@ -446,89 +446,110 @@ rinella > round images on Posts
 .post-thumbnail a img {
 	border-radius: 50%;
 }
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+/* - - - - - - - - - - - - - - 
 rinella >> START Parallax for About Me
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+- - - - - - - - -- - - - - - */
+
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
-	position: relative;
-	opacity: 1;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	/*-moz-transform: scale(1.05);
-	 * -webkit-transform: scale(1.05); 
-	 * transform: scale(1.05);*/
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .bgimg-1 {
-	background-image: url("/wp-content/uploads/2019/03/baseballImg02.800w.png");
-	min-height: 400px;
+  background-image: url("/wp-content/uploads/2019/03/baseballImg02.800w.png");
+  min-height: 400px;
 }
 .bgimg-2 {
-	background-image: url("/wp-content/uploads/2019/03/guitarImg04.800w.jpeg");
-	min-height: 400px;
+  background-image: url("/wp-content/uploads/2019/03/guitarImg04.800w.jpeg");
+  min-height: 400px;
 }
 .bgimg-3 {
-  	background-image: url("/wp-content/uploads/2019/03/carImg01.800w.png");
-  	min-height: 400px;
+  background-image: url("/wp-content/uploads/2019/03/carImg01.800w.png");
+  min-height: 400px;
 }
 .bgimg-4 {
-	background-image: url("/wp-content/uploads/2019/03/CSMCBldgMoses.800w.jpg");
-	min-height: 400px;
+  background-image: url("/wp-content/uploads/2019/03/CSMCBldgMoses.800w.jpg");
+  min-height: 400px;
 }
 .bgimg-5 {
-	background-image: url("/wp-content/uploads/2019/03/bikeimg01.800w.png");
-	min-height: 400px;
+  background-image: url("/wp-content/uploads/2019/03/bikeimg01.800w.png");
+  min-height: 400px;
 }
+.paraBox {
+color:#FFFFFF;
+background-color:#000000;
+text-align:center;
+padding-top:20px;
+padding-bottom:5px;
+}
+/*.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}*/
+
 /* Turn off parallax scrolling for tablets and phones */
 @media screen and (max-width: 800px) { 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
-	background-attachment: scroll;
-	min-height: 550px;
-	}
+    background-attachment: scroll;
+		min-height: 550px;
+  }
 .paraBox {
-	margin-top: -20px;
-	margin-bottom: 20px;
+		margin-top: -20px;
+		margin-bottom: 20px;
 	}
 }
 @media screen and (max-width: 768px) {
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
-	background-attachment: scroll;
-	min-height: 500px;
-	margin-top: 10px;
-	}
+    background-attachment: scroll;
+		min-height: 500px;
+		margin-top: 10px;
+  }
 .paraBox {
-	margin-top: -10px;
-	margin-bottom: 30px;
+		margin-top: -10px;
+		margin-bottom: 30px;
 	}
 }
 @media screen and (max-width: 414px) {
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
-	background-attachment: scroll;
-	min-height: 350px;
-	margin-top: -20px;
+	.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    background-attachment: scroll;
+		min-height: 350px;
+		margin-top: 0px;
 	}
-.paraBox {
-	margin-top: -70px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 10px;
+	.paraBox {
+		margin-top: -70px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 20px;
 	}
 }
 @media screen and (max-width: 375px) {
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
-	background-attachment: scroll;
-	min-height: 350px;
-	margin-top: -40px;
+    background-attachment: scroll;
+		min-height: 350px;
+		margin-top: 0px;
 	}
 .paraBox {
-	margin-top: -90px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 10px;
+		margin-top: -90px;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 20px;
 	}
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+/* - - - - - - - - - - - - - - 
 rinella >> END Parallax for About Me
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+- - - - - - - - -- - - - - - */
