@@ -373,10 +373,10 @@ END - PORTFOLIO SECTION
 START - MEDIA QUERIES 
 < < < < < < < < < < < < < < */
 
-/* - - - - 768 px and Up - - - - */
-@media screen and (min-width: 768px) and (max-width:50000px) {
+/* - - 801 px and Up - - */
+@media screen and (min-width: 801px){
 /* - - - - - - - - - - - - - - 
-Portfolio - iPad and higher, Hide the Mobile friendly class for the My Requirements text
+Portfolio - Hide the Mobile friendly class for the My Requirements text for Tablet and up
 - - - - - - - - - - - - - - */
 #textPortfolio-mobileOnly {
 	display: none;
@@ -421,22 +421,17 @@ Parallax Tablet - turn off parallax scrolling for tablets and phones and set sty
 	margin-top: -20px;
 	margin-bottom: 20px;
 	}
-}
-
-/* - - - - 768 px to 800px - - - - */
-
 /* - - - - - - - - - - - - - -
-Portfolio - iPad set text size and vetical aligment in image hover 
+Portfolio - Turn off image hover for iPad and Tablet 
 - - - - - - - - - - - - - - */
-@media screen and (min-width: 768px) and (max-width:800px) {
-/* - - - - - - - - - - - - - -
-Portfolio - iPad and Tablet set text size and vetical aligment in image hover
-- - - - - - - - - - - - - - */
-.textPortfolio {
-    top:50%;
+.containerPortfolio:hover .overLayTop, .overLayBottom {
+    display: none;
 	}
-p.textPortheading {
-   	font-size: 1.5rem;
+/* - - - - - - - - - - - - - -
+Portfolio - My Requirements indent li bullets for Tablet and iPad
+- - - - - - - - - - - - - - */
+ul.mobileOnly {
+	 list-style-position: inside;
 	}
 }
 
@@ -511,7 +506,7 @@ Mobile - resize header image for
 - - - - - - - - - - - - - - */
 .has-header-image.home.blog .custom-header {
     height: 25vh;
-	object-fit: cover;
+	/*object-fit: cover;*/
 	}
 /* - - - - - - - - - - - - - -
 Mobile menu change font and text to uppercase
@@ -614,10 +609,11 @@ Portfolio - Mobile text size for li text with mobile friendly My Requirements at
 	}
 /* - - - - - - - - - - - - - -
 Portfolio - Mobile margin size/indent for ul text with mobile friendly My Requirements at 414
-- - - - - - - - - - - - - - */
+
 ul.mobileOnly {
 	margin-left: 14px;
 	}
+- - - - - - - - - - - - - - */
 }
 
 /* - - - - 375 px - - - - */
